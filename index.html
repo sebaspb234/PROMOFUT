@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <title>PROMOFUT</title>
+</head>
+<body>
+    <header>
+        <div class="logo"> <!-- Logo -->
+            <h1>PROMOFUT</h1>
+        </div>
+        <div class="margenizquierdo">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Canchas</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Contáctenos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Barra de busqueda -->
+        <div>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+            <form action="">
+            <input type="search" required>
+            <i class="fa fa-search"></i>
+            <a href="javascript:void(0)" id="clear-btn" class="clear-btn">Clear</a>
+            </form>
+        </div>
+        <div class="user-buttons">
+            <button id="login-button">Iniciar Sesión</button>
+            <button id="register-button">Registrarse</button>
+        </div>
+    </header>
+
+    <!-- ... (tu código HTML existente) ... -->
+
+<div class="formulario-container">
+    <form id="login-form">
+        <label for="username">Usuario:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+        <button id="submit-button">Iniciar Sesión</button>
+    </form>
+</div>
+
+<!-- Registro-->
+<div class="formulario-container" id="registro-modal">
+    <form id="registro-form">
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required>
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="celular">Celular:</label>
+        <input type="tel" id="celular" name="celular" required>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required>
+
+        <button id="registro-button">Registrarse</button>
+    </form>
+</div>
+
+<!-- ... (tu código HTML existente) ... -->
+
+<section class="canchas">
+    <div class="cancha">
+        <img src="cancha1.jpeg" alt="Cancha 1">
+        <h3>Cancha 1</h3>
+        <button class="detalles-button" id="cancha1-details">Mostrar Detalles</button>
+    </div>
+    <div class="cancha">
+        <img src="cancha2.jpeg" alt="Cancha 2">
+        <h3>Cancha 2</h3>
+        <button class="detalles-button" id="cancha2-details">Mostrar Detalles</button>
+    </div>
+    <div class="cancha">
+        <img src="cancha3.jpg" alt="Cancha 3">
+        <h3>Cancha 3</h3>
+        <button class="detalles-button" id="cancha3-details">Mostrar Detalles</button>
+    </div>
+</section>
+
+<!-- Detalles de las canchas -->
+
+<div class="cancha-modal" id="cancha-modal">
+    <div class="cancha-modal-content">
+        <span class="close-button" id="close-button">&times;</span>
+        <img id="cancha-image" src="" alt="Cancha">
+        <h2>Descripción</h2>
+        <p><strong>Tipo de Superficie:</strong> <span id="tipo-superficie"></span></p>
+        <p><strong>Dimensiones:</strong> <span id="dimensiones"></span></p>
+        <p><strong>Servicios Adicionales:</strong> <span id="servicios-adicionales"></span></p>
+        <h2>Ubicación</h2>
+        <p><strong>Dirección:</strong> <span id="ubicacion"></span></p>
+        <h2>Precios</h2>
+        <p><strong>Precio por Hora:</strong> <span id="precio-hora"></span></p>
+        <p><strong>Precio por Día:</strong> <span id="precio-dia"></span></p>
+        <h2>Promoción</h2>
+        <p><span id="promocion"></span></p>
+        <!-- Botón de redirección a WhatsApp -->
+        <a id="whatsapp-button" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+    </div>
+</div>
+
+
+<!-- ... (tu código HTML existente) ... -->
+
+<section class="contacto">
+    <h2>Contacto</h2>
+    <p>Si deseas más información o tienes alguna pregunta, no dudes en contactarnos:</p>
+    <ul>
+        <li>Teléfono: +51 987 115 100</li>
+        <li>Correo electrónico: promocanchas@gmail.com</li>
+        <li>Dirección: Urb. Quinta Vivanco, Arequipa, Perú</li>
+    </ul>
+</section>
+
+    <!-- Aquí puedes agregar el contenido principal de tu página -->
+
+    <script src="script.js"></script>
+</body>
+</html>

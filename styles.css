@@ -1,0 +1,324 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #297fa1;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin-left: auto; /* Alinea la lista a la derecha */
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.margenizquierdo
+{
+    margin-left: 0%;
+}
+
+.logo{
+    font-family: "Gill Sans", sans-serif;
+    color: aliceblue;
+    font-size: 15px;
+    
+}
+
+.user-buttons button {
+    background-color: #ffffff;
+    color: #297fa1;;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 20px; /* Ajusta el valor según el radio de redondeo que desees */
+}
+
+.user-buttons button:hover {
+    background-color: #889997;
+    color: #ffffff;;
+}
+
+/* CSS canchas*/
+/* ... (tu código CSS existente) ... */
+
+.canchas {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.cancha {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.2s; /* Efecto de agrandamiento */
+    margin: 10px; /* Espacio entre las cajas */
+}
+
+.cancha img {
+    max-width: 100%;
+    max-height: 200px; /* Ajusta la altura máxima de las imágenes */
+    display: block; /* Elimina espacios en blanco debajo de las imágenes */
+    margin: 0 auto; /* Centra horizontalmente las imágenes */
+}
+
+.cancha h3 {
+    margin-top: 10px; /* Espacio entre la imagen y el nombre de la cancha */
+}
+
+.cancha:hover {
+    transform: scale(1.05); /* Agrandamiento al pasar el mouse */
+}
+
+.detalles-button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.detalles-button:hover {
+    background-color: #005b8d;
+}
+
+/*CONTACTO*/
+
+/* ... (tu código CSS existente) ... */
+
+.contacto {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    font-size: 16px;
+}
+
+.contacto ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contacto li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/*INICIAR SESION*/
+.formulario-container {
+    display: none;
+}
+
+/* Estilos para el contenedor del formulario modal */
+.formulario-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+/* Estilos para el fondo oscuro del modal */
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    z-index: 999;
+}
+
+/* Estilos para el formulario de inicio de sesión, ajusta según tus necesidades */
+#login-form {
+    text-align: center;
+}
+
+#login-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit-button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#submit-button:hover {
+    background-color: #005b8d;
+}
+
+/* REGISTRO */
+
+/* Estilos para el contenedor del formulario modal de registro */
+#registro-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+/* Estilos para los campos del formulario */
+#registro-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#registro-form input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de registro */
+#registro-button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#registro-button:hover {
+    background-color: #005b8d;
+}
+
+
+/* Descripciones de las canchas */
+/* Estilos para el cuadro modal de la cancha */
+.cancha-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    overflow: auto;
+}
+
+.cancha-modal-content {
+    background: #fff;
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos para la imagen en el cuadro modal */
+#cancha-image {
+    max-width: 100%; /* La imagen se ajustará al ancho máximo del contenedor */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+
+/* Whatsapp button */
+/* Botón de WhatsApp en el detalle de las canchas */
+.whatsapp {
+    position: absolute; /* Utiliza posición absoluta en lugar de fija */
+    bottom: 10px; /* Ajusta la posición vertical según tus necesidades */
+    right: 10px; /* Ajusta la posición horizontal según tus necesidades */
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+  .whatsapp-icon {
+    font-size: 30px; /* Ajusta el tamaño del ícono según tus necesidades */
+    margin-top:13px;
+  }
+
+  /* Barra de busqueda */
+
+  .clear-btn {
+    background-color: #ffffff; /* Cambia el color de fondo a rojo */
+    color: #376c95; /* Cambia el color del texto a blanco */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    padding: 5px 10px; /* Ajusta el espaciado dentro del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-weight: bold; /* Hace que el texto sea más audaz */
+    transition: background-color 0.3s; /* Agrega una transición de color de fondo suave */
+  }
+  
+  .clear-btn:hover {
+    background-color: #376c95; /* Cambia el color de fondo al pasar sobre el botón */
+    color: #ffffff;
+    }
+  
